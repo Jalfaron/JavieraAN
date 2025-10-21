@@ -6,6 +6,8 @@ Inicio proyecto
 
 library(tidyverse)
 library(readr)
+install.packages("tidytext")
+library(tidytext)
 
 dylan_albums <- read_csv("bobdylansongs.csv")
 show_col_types = FALSE
@@ -14,5 +16,7 @@ show_col_types = FALSE
 
 glimpse(dylan_albums)
 #Vemos que la base de datos contiene 4 columnas: year, album, song y lyrics
+
+
 
 
