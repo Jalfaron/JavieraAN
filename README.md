@@ -11,10 +11,13 @@ editor_options:
 Un experimento de Javiera Alfaro
 
 Encontré en Kaggle una base de datos con toda la información
-discográfica de Bob Dylan.
+discográfica de Bob Dylan (gracias persona que hizo este trabajo). Lo
+que queremos hacer es seguir las sagradas instrucciones de aaumaitre en
+GitHub, donde analizó las canciones de Taylor Swift. Replicaremos su
+trabajo pero con Dylan.
 
-Comenzamos cargándola, utilizando las librerías tidyverse, readr y
-tidytext.
+Comenzamos cargándola a nuestro proyecto markdown, utilizando las
+librerías tidyverse, readr y tidytext.
 
 ```{r}
 library(tidyverse)
