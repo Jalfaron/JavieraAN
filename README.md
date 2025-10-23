@@ -103,7 +103,7 @@ glimpse(word_clean_3)
 
 ```
 
-VAhora queremos comenzar a mostrar la información de manera "visual".
+Ahora queremos comenzar a mostrar la información de manera "visual".
 Para esto usaremos el paquete wordcloud.
 
 ```{r}
@@ -135,3 +135,20 @@ word_clean_3 |>
        x = "Palabras",
        y = "Frecuencia")
 ```
+
+Aquí lo mismo pero en verde.
+
+```{r}
+word_clean_3 |>
+  arrange(desc(n)) |>
+  head(10) |>
+  ggplot(aes(x = reorder(word, n), y = n)) +
+  geom_col(fill = "green") +
+  coord_flip() +
+  labs(title = "Palabras más frecuentes en las canciones de Bob Dylan",
+       x = "Palabras",
+       y = "Frecuencia")
+```
+
+Podemos ver la palabra que el gran Dylan más usa es yer. ¿Qué es eso.?
+Nadie sabe.
