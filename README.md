@@ -1,7 +1,4 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
+
 ---
 
 ### Proyecto canciones de Bob Dylan 
